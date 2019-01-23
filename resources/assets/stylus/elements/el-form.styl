@@ -1,0 +1,44 @@
+.el-form-item.is-required .el-form-item__label:before
+  display: none
+
+.el-form-item.is-required .el-form-item__label:after
+  content: '*';
+  color: #f56c6c;
+  margin-left: 4px;
+
+.input-email
+  width 200px
+
+
+@media screen and (max-width: 1024px)
+  .el-form
+    &__item
+      display flex
+    &--inline
+      display flex
+      flex-direction row
+      justify-content space-between
+
+@media screen and (max-width: 600px)
+  .el-form
+    &--inline
+      flex-direction column
+      .el-form-item
+        width 100%
+        &__content
+          text-align center
+          .el-button
+            width 100%
+    &__year
+      width 50%
+  .el-form-item
+    &__content
+      width 100%
+  .input-email
+    width 100%
+  .el-button
+    &__events
+      width 100%
+  .el-input
+    width 100%
+

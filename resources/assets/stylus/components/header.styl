@@ -1,0 +1,41 @@
+.header
+  display: flex
+  flex-wrap wrap
+  position: relative
+  align-items center
+  justify-content space-between
+  height s(100) !important
+  background $cBlueBg
+
+  &__profile
+    display: flex
+    align-items center
+
+    &__name
+      color alpha($cWhite, 0.9)
+      font-size s(18)
+      margin-right s(10, 18)
+
+.el-main.pageevent
+  position: relative
+  top 20px
+
+@media screen and (max-width: 1024px)
+  .bloc-header
+    display flex
+    flex-direction row
+    justify-content space-between
+
+@media screen and (max-width: 768px)
+  .header
+    &__profile
+        &__name
+          font-size s(16)
+    &__svg
+      width 20px
+      height 20px
+
+@media screen and (max-width:600px)
+  .bloc-header
+    flex-direction column-reverse
+

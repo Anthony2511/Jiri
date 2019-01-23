@@ -1,0 +1,33 @@
+.el-dialog
+  &__body
+
+    & .dialog-simple-form
+      & .el-form-item__label
+        font-weight: 700
+      & .el-form-item
+        margin-bottom 20px
+
+@media screen and (max-width: 600px)
+  .el-dialog
+    width 90% !important
+    .el-form
+      .el-form-item
+        width 100%
+        &__content
+          width 70%
+        .el-input
+          width 100%
+      &__year
+        width 70%
+    &__body
+      text-align center
+
+
+@media screen and (max-width: 400px)
+  .el-dialog
+    .el-form
+      .el-form-item
+        &__content
+          width 50%
+      &__year
+        width 50%

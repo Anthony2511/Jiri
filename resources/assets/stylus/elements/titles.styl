@@ -1,0 +1,23 @@
+/*********************************
+* Styles for titles
+* 
+* Example :
+* $title21
+*   font-size: 21px
+*   line-height: 1.1
+*   letter-spacing: 1.25px
+*********************************/
+.title-header
+  font-size s(32)
+  font-weight: 300
+  color: $cWhite
+  letter-spacing s(2.33, 32)
+
+@media screen and (max-width: 1024px)
+  .title-header
+    font-size s(25)
+
+@media screen and (max-width: 768px)
+  .title-header
+    font-size s(20)
+    text-align center

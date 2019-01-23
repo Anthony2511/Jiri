@@ -1,0 +1,151 @@
+.listing__item--box
+  position: relative
+
+.el-icon-button
+  position: absolute
+  right: 10px
+  top 15px
+
+.el-icon-button > .el-icon-setting
+  color $cBlueBg
+  cursor pointer
+
+.box-title
+  margin-top 30px
+  margin-bottom 15px
+  display: block
+  font-weight: 700
+  font-size: 16px;
+  color: #9D9D9D;
+  letter-spacing: 1.78px;
+  text-transform: uppercase
+  text-align: center
+
+.box-content
+  margin-bottom 30px
+  display: block
+  font-size: 32px
+  color: $cBlue
+  font-weight: 400
+  text-align: center
+  letter-spacing: 2.33px
+
+.actions-projects
+  display: flex
+  justify-content space-between
+
+.ponderation-totale
+  display: flex
+
+.ponderationOk
+  color $cSuccess
+
+.ponderationError
+  color $cDanger
+
+.dialogAddStudent
+  .el-form-item__content
+    width 90%
+
+.collapse-title
+  font-size: 16px;
+  font-weight: 700
+  color $regularText
+
+.page-subtitle
+  font-size 22px
+  font-weight: 700
+  letter-spacing 1px
+  color $cBlack2
+
+.box-implementation-title
+  margin-top 30px
+  margin-bottom 15px
+  display: block
+  font-size: 26px;
+  color: $cBlue;
+  letter-spacing: 1.78px;
+  text-transform: uppercase
+  text-align: center
+
+.box-implementation-subtitle
+  display: block
+  font-size 16px
+  font-weight: 700
+  color #9D9D9D
+  letter-spacing: 1.78px;
+  text-align: center
+  margin-bottom: 3px
+
+.box-implementation-link
+  display: block
+  color $cBlue
+  letter-spacing: 1.78px;
+  text-align: center
+  margin-bottom 15px
+
+.listing__item--implementation
+  margin-right 4.1%
+  &:first-child
+    margin-left: 0
+
+.box-implementation-description
+  max-width 600px
+  margin 0 auto
+  text-align: center
+  color $cBlack
+  margin-bottom 30px
+  line-height: 1.3em
+
+.box-implementation-link--red
+  color $cDanger
+  font-weight: 700
+
+.button-top-right
+  position: absolute
+  right: 20px
+  top 15px
+
+.points
+  flex-wrap: wrap
+
+.point
+  margin-right 50px
+  text-align: center
+  &:last-child
+    margin-right: 0
+
+.count-jury
+  display: flex
+  align-items center
+  & span
+    display: inline-block
+    font-size 22px
+    margin-right 5px
+
+.scorePond
+  display: block
+  font-size 24px
+
+@media screen and (max-width: 1150px)
+  .point
+    margin-right 30px
+
+@media screen and (max-width: 1024px)
+  .points
+    justify-content center
+    margin-top 20px
+  .count-jury
+    justify-content center
+    margin-top 20px
+  .scorePond
+    text-align center
+    margin-top 20px
+
+@media screen and (max-width: 600px)
+  .point
+    &__title
+      font-size 14px
+    &__point
+      font-size 14px
+
